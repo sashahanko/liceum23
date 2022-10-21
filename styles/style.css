@@ -1,0 +1,363 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*Reset Css*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: lightgrey;
+  border: 6px solid #696969;
+  border-radius:25px;
+  text-align: center;
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+  color: black;
+  font-family: 'PT Sans Narrow', sans-serif;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: grey;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb li a:hover {
+  color: white;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, summary, time, mark, audio, video, button, content {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	zoom: 1;
+
+}
+button{
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+}
+button:focus {
+  outline: none;
+}
+a{
+	cursor: pointer;
+  text-decoration: none;
+}
+a:visited {
+  color: transparent;
+}
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+/*Container*/
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*OverAll*/
+body{
+font-family: 'PT Sans Narrow', sans-serif;
+transition: 1s;
+}
+
+.preloader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:100%;
+  background: #696969;
+  z-index: 3;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+.preloader p{
+  text-align: center;
+  left: 0;
+  top: 1100px;
+  width: 1500px;
+   height: 100px; 
+  transition: 1s all;
+}
+.loader{
+
+   width: 75px;
+   height: 75px; 
+   border: 10px solid white;
+   border-radius: 50%;
+   border-top-color: black;
+   left: 50%;
+   top: 50%;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   animation: 1s spins infinite linear;
+}
+@keyframes spins {
+    from{
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to{
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+.done {
+    opacity: 0;
+    visibility: hidden;
+}
+/*Header*/
+
+.header, .footer{
+   background-color:#696969;
+  border-style:solid;
+  border-color:#524b4b;
+  border-width:2px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.header__wrapper{
+    padding: 30px 50px;
+}
+
+.header__nav ul{
+  display: flex;
+}
+
+.header__nav {
+    overflow: hidden;
+    background-color: #696969;
+    
+}
+.header__nav a {
+    font-weight: bold;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 44px;
+    font-size: 25px;
+    text-decoration: none;
+      display: flex; align-items: center; height: 100%;
+}
+
+.header__nav a:hover {
+   color: black;
+   transition: 0.3s;
+}
+
+.header__burger {
+  display: none;
+}
+
+/*Info*/
+
+.info{
+  background-image: url("image/bc.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px 0px;
+
+
+
+}
+
+
+.info__wrapper{
+  background-color:#696969;
+  padding: 50px 20px;
+  box-shadow: rgba(1,1,1,0.5) 0px 0px 20px 15px;
+
+}
+
+.info__blocks{
+  margin-top: 50px;
+
+}
+
+.info__block{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+}
+
+.info__block+.info__block{
+  margin-top: 20px;
+}
+
+.info__title{
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  font-family: 'Arial Black';
+ 
+}
+.block__img img{
+  width: 100%;
+  display: flex;
+}
+
+
+.block__text span{
+  font-size: 2.2em;
+  font-weight: bold;
+   color: white;
+   -webkit-text-stroke-width: 0.3px;
+   -webkit-text-stroke-color: black;
+}
+.block__text p{
+ font-size: 1.5em;
+ font-weight: lighter;
+ font-family: 'PT Sans Narrow', sans-serif;
+ color: white;
+}
+
+
+/*Footer*/
+
+.footer__wrapper{
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+
+.footer__logo button{
+  max-width: 120px;
+  width: 100%;
+  padding: 8px;
+  background-color: darkgrey;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  margin-top: 1;
+  margin: 30px;
+}
+.footer__logo button:hover{
+   background: rgb(45, 50, 102);
+  }
+
+.footer__caption{
+  text-align: center;
+}
+
+.footer__text{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.footer__text p+p{
+  margin-top: 5px;
+}
+
+.footer__text a{
+  color: white;
+  transition: color 0.2s;
+}
+.footer__text a:hover{
+  color: rgba(1,1,1,0.5);
+}
+@media screen and (max-width: 767px) {
+
+   .header__nav{
+    position: inline;
+   }
+   .header__wrapper a{
+  padding: 10px 10px;
+ }
+
+}
+@media screen and (max-width: 425px) {
+
+.container {
+  width: 100%;
+  display: flex;
+}
+.block__text p {
+    font-size: 0.8em;
+   margin-top: 20px
+}
+ .header__nav ul{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+}
+.breadcrumb ul{
+width: 50px;
+display: flex;
+
+
+}
+ .info__block{
+  display: unset;
+}
+.block__img iframe{
+  width: 100%;
+  margin-top: 20px;
+}
+.block__text span{
+    margin-top: 20px;
+    width: 50%;
+}
+.block__img img{
+   width: 55%;
+}
+.footer__wrapper{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  } 
+}
+#gotop {
+  position: fixed; 
+  bottom: 25px; 
+  right: 150px;
+  text-align: center;
+  cursor:pointer; 
+  display:none;
+  width: 50px;
+  height: 30px;
+  background: #c0c0c0;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+
+#gotop:hover {
+  background: #333;
+  color: #fff;
+}
+
