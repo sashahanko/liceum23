@@ -135,9 +135,6 @@ transition: 1s;
 
 .header, .footer{
    background-color: white;
-  border-style:solid;
-  border-color:#524b4b;
-  border-width:2px;
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -171,9 +168,7 @@ transition: 1s;
    transition: 0.3s;
 }
 
-.header__burger {
-  display: none;
-}
+
 
 /*Info*/
 
