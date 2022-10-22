@@ -135,6 +135,9 @@ transition: 1s;
 
 .header, .footer{
    background-color: white;
+  border-style:solid;
+  border-color:#524b4b;
+  border-width:2px;
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -168,7 +171,9 @@ transition: 1s;
    transition: 0.3s;
 }
 
-
+.header__burger {
+  display: none;
+}
 
 /*Info*/
 
@@ -251,7 +256,7 @@ transition: 1s;
   width: 100%;
   padding: 8px;
   background-color: black;
-  color: darkgrey;
+  color: white;
   border: none;
   border-radius: 3px;
   font-size: 1em;
@@ -259,7 +264,9 @@ transition: 1s;
   margin: 30px;
 }
 .footer__logo button:hover{
-   background: rgb(45, 50, 102);
+   background: darkgrey;
+   color: black;
+   transition: 1s;
 }
 
 .footer__caption{

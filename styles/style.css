@@ -263,7 +263,9 @@ transition: 1s;
   margin: 30px;
 }
 .footer__logo button:hover{
-   background: rgb(45, 50, 102);
+   background: black;
+   color: white;
+   transition: 1s;
   }
 
 .footer__caption{
@@ -293,8 +295,8 @@ transition: 1s;
     position: inline;
    }
    .header__wrapper a{
-  padding: 10px 10px;
- }
+   padding: 10px 10px;
+   }
 
 }
 @media screen and (max-width: 425px) {
@@ -348,7 +350,7 @@ display: flex;
   text-align: center;
   cursor:pointer; 
   display:none;
-  width: 50px;
+  width: 80px;
   height: 30px;
   background: #c0c0c0;
   line-height: 30px;

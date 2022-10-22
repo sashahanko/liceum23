@@ -263,7 +263,9 @@ font-family: sans-serif;
   margin: 30px;
 }
 .footer__logo button:hover{
-   background: rgb(45, 50, 102);
+   background: black;
+   color: white;
+   transition: 1s;
   }
 
 .footer__caption{

@@ -250,12 +250,13 @@ font-family: sans-serif;
   align-items: center;
 }
 
+
 .footer__logo button{
   max-width: 120px;
   width: 100%;
   padding: 8px;
   background-color: black;
-  color: darkgrey;
+  color: white;
   border: none;
   border-radius: 3px;
   font-size: 1em;
@@ -263,7 +264,9 @@ font-family: sans-serif;
   margin: 30px;
 }
 .footer__logo button:hover{
-   background: rgb(45, 50, 102);
+   background: darkgrey;
+   color: black;
+   transition: 1s;
 }
 
 .footer__caption{
